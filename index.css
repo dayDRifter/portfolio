@@ -1,0 +1,249 @@
+body{
+	margin: 0px;
+}
+/*Body Header*/
+
+#body-header{
+	height: 65vh;
+	background-image: url(Images/macbook_mouse.jpg);
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+	background-attachment: fixed;
+}
+section:target{
+	background-color: cyan;
+}
+/*Horizontal-list*/
+
+.Horizontal-list{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+.Horizontal-list li{
+	display: inline-block;
+	margin: 24px 8px 8px 0px;
+	font-size: 20px;
+	padding: 10px;
+
+	
+
+}
+.Horizontal-list li a{
+	color: white;
+	text-decoration: none;
+}
+.nav-menu li a:hover{
+	color: lightgray;
+    border-bottom: 1px solid white;
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+
+}
+.text-center{
+	text-align: center;
+}
+/*Name and social */
+#name-social-container{
+	margin-top: 10vh;
+}
+#My-name{
+     color: white;
+     margin: 35px 4px 0px 0px;
+     font-size: 4rem;
+     letter-spacing: 0.1rem;
+     font-weight: 700;
+     margin-bottom: 0.5rem;
+}
+.social-icons li a i{
+	padding: 5px;
+	font-size: 1rem;
+	border-radius:50%;
+
+}
+.social-icons li a i:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196,0.3);
+}
+.section-heading{
+	width: auto;
+	padding: 20px 10px 10px;
+/*	margin: 10px auto;*/
+	font-weight: 400;
+}
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+section{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+/*	height: 75vh;*/
+}
+section:nth-child(2n){
+	background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+	background-color:white;
+}
+.mb75px{
+	margin-bottom: 75px;
+}
+.skills-display{
+    
+    width: 70%;
+    /*height: 100px;
+    border:2px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: ;
+}
+.skill-name span{
+	color: white;
+	font-size: 1rem;
+	margin-left: 10px;
+}
+.skill-progress{
+	width: 7rem;
+	height: 1.4rem;
+	background-color: lightgrey;
+	border-radius: 0.8rem;
+/*	border: 2px solid black;*/
+}
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+}
+.mb-green{
+	background-color: #00FF00;
+}
+.mb-black{
+	background-color: #000000;
+}
+.mb-blue{
+	background-color: #2857a4;
+}
+.mb-orange{
+	background-color: #FFA500;
+}
+.mb-red{
+	background-color: #FF0000;
+}
+.mb-brown{
+	background-color: #964B00;
+}
+.eighty-five-percent{
+	width: 85%;
+	height: inherit;
+
+}
+.seventy-four-percent{
+	width: 74%;
+	height: inherit;
+}
+.fifty-four-percent{
+	width: 54%;
+	height: inherit;
+}
+/*Timeline*/
+.timeline{
+	position: relative;
+	width: 75%;
+/*	border: 2px solid black;*/
+}
+.timeline-box{
+	position: relative;
+	width: 40%;
+	left: 5%;
+	margin: 5px;
+	min-height: 150px;
+	border: 2px solid black;
+}
+.timeline-box:nth-child(2n)
+{
+	left: 53%;
+}
+.timeline-divider{
+	position: absolute;
+	height: 85%;
+	width: 0;
+	border: 3px dashed #0096fa6b;
+	top: 10%;
+	left: 50%;
+}
+.timeline-traveller{
+	position: sticky;
+	top:30%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+.timeline-box:nth-child(2n+1)::after{
+	content: " ";
+	position: absolute;
+	top: 50%;
+	right: -12.3%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index: 1;
+}
+.timeline-box:nth-child(2n)::after{
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: -9.5%;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index: 1;
+}
+
+@media screen and (max-width:600px)
+{
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box{
+		left: 12% !important;	
+		width: 80%;
+	}
+	/*.timeline-box:nth-child(2n)
+	{
+		left:12%	;
+	}*/
+	.timeline-box::after{
+		left: -12% !important;
+	}
+}
+/*About Section*/
+
+#about{
+	height: auto;
+	width: 100%;
+    position: relative;
+}  
+#my-image{
+	height: 16rem;
+	width: 16rem;
+	margin: auto;
+	margin-top: -22vh;
+}
+#my-image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+		box-shadow: 0px 0px 6px 4px rgba(255,255,255,1.6);
+
+}
+#about p{
+	margin: auto;
+	text-align: center;
+}
